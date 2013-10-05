@@ -2,7 +2,7 @@ Sug!
 ====
 
 [![Dependencies Status](https://david-dm.org/killdream/sug.png)](https://david-dm.org/killdream/sug.png)
-[![NPM version](https://badge.fury.io/js/sug.png)](http://badge.fury.io/js/sug
+[![NPM version](https://badge.fury.io/js/sug.png)](http://badge.fury.io/js/sug)
 [![unstable](http://hughsk.github.io/stability-badges/dist/unstable.svg)](http://github.com/hughsk/stability-badges)
 
 Sucks Markdown outta yo source code, regardless of language.
