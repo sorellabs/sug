@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Sucks Markdown outta your source files.",
   "main": "index.js",
+  "bin": "bin/sug.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/killdream/sug.git"
@@ -16,5 +17,11 @@
   "readmeFile": "README.md",
   "bugs": {
     "url": "https://github.com/killdream/sug/issues"
+  },
+  "dependencies": {
+    "prelude-ls": "~1.0.3",
+    "docopt": "~0.4.0",
+    "flaw": "~0.1.0",
+    "boo": "~2.0.0"
   }
 }
