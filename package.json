@@ -1,0 +1,20 @@
+{
+  "name": "sug",
+  "version": "0.1.0",
+  "description": "Sucks Markdown outta your source files.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/killdream/sug.git"
+  },
+  "keywords": [
+    "documentation",
+    "markdown"
+  ],
+  "author": "Quildreen Motta",
+  "license": "MIT",
+  "readmeFile": "README.md",
+  "bugs": {
+    "url": "https://github.com/killdream/sug/issues"
+  }
+}
