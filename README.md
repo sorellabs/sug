@@ -1,7 +1,7 @@
 Sug!
 ====
 
-[![Dependencies Status](https://david-dm.org/killdream/sug.png)](https://david-dm.org/killdream/sug.png)
+[![Dependencies Status](https://david-dm.org/robotlolita/sug.png)](https://david-dm.org/robotlolita/sug.png)
 [![NPM version](https://badge.fury.io/js/sug.png)](http://badge.fury.io/js/sug)
 [![unstable](http://hughsk.github.io/stability-badges/dist/unstable.svg)](http://github.com/hughsk/stability-badges)
 
@@ -58,5 +58,5 @@ Sug will run sweetly on top of Node 0.10+, with the new Stream support.
 
 Copyright (c) 2013 Quildreen Motta.
 
-Released under the [MIT licence](https://github.com/hifivejs/alright/blob/master/LICENCE).
+Released under the [MIT licence](https://github.com/robotlolita/sug/blob/master/LICENCE).
 
