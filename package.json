@@ -1,6 +1,6 @@
 {
   "name": "sug",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sucks Markdown outta your source files.",
   "main": "index.js",
   "bin": "bin/sug.js",
