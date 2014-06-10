@@ -121,7 +121,7 @@ languages.java = languages.c.derive({
 })
 
 // Languages that use `#` as comment character
-languages.bash = Base.derive({
+languages.bash = languages.text.derive({
   name: 'bash'
 , friendlyName: 'Bash'
 , extension: /\.sh$/
