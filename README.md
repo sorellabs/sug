@@ -47,6 +47,7 @@ Into:
     Options:
       -o --output=DIR           The output directory
       -l --language=LANG        Forces using language for all files
+      -d --doconly               Omits code sections from the output.
 
 
 ## Platform support
