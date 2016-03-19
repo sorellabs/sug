@@ -44,13 +44,16 @@ function languageFromName(name) {
 function raise(error) {
   throw error }
 
-function convert(filename, languageName) {
+function convert(filename, languageName, doconly) {
   var language = languageName?    languageFromName(languageName)
                : /* otherwise */  languageForFile(filename)
 
   if (!language)  throw ConversionError("Does not know how to handle: " + filename)
 
-  return sug.render(sug.parse(read(filename), language)) }
+  var filterTokens = doconly?         _.filter(function(a) { return a.type != 'Code' })
+                   : /* otherwise */  _.id
+
+  return sug.render(filterTokens(sug.parse(read(filename), language))) }
 
 module.exports = { convert: convert
                  , languageFromName: languageFromName

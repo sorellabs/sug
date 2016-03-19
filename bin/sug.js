@@ -31,6 +31,7 @@ var doc = "sug --- Sucks Markdown outta your source files.\n"
         + "Options:\n"
         + "  -o --output=DIR            The output directory.\n"
         + "  -l --language=LANG         Forces use of language for all files.\n"
+        + "  -d --doconly               Omits code sections from the output.\n"
         + "\n"
 
 var fs     = require('fs')
@@ -49,7 +50,8 @@ var args  = docopt(doc, { version: pkg.version })
 
   args.languages?  listLanguages()
 : args.convert?    convertFiles(args['<files>'], args['--output']
-                                               , args['--language'])
+                                               , args['--language']
+                                               , args['--doconly'])
 : /* otherwise */  printHelp()
 
 
@@ -63,14 +65,14 @@ function listLanguages() {
                 return ' - ' + a.name + spacing + a.friendlyName }).join('\n'))}
 
 
-function convertFiles(xs, output, language) {
+function convertFiles(xs, output, language, doconly) {
   output = output || '.'
 
   xs.forEach(function(x) {
     var filename = path.basename(x, path.extname(x))
     var outfile  = path.join(output, filename + '.md')
     try {
-      fs.writeFileSync(outfile, cli.convert(x, language), 'utf-8')
+      fs.writeFileSync(outfile, cli.convert(x, language, doconly), 'utf-8')
       console.log('Successfully converted: ' + x) }
     catch (e) {
       if (e.name != 'ConversionError') throw e
